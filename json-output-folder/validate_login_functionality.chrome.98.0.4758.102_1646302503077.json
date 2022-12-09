@@ -1,0 +1,122 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate login functionality",
+    "line": 1,
+    "id": "validate-login-functionality",
+    "tags": [],
+    "uri": "feature\\registration.feature",
+    "elements": [
+      {
+        "id": "validate-login-functionality;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login with invalid credentials",
+        "tags": [
+          {
+            "name": "@LoginFunctionality",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinition\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "navigate to login page",
+            "match": {
+              "location": "stepDefinition\\registration.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23165000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user enter invalid username and password",
+            "match": {
+              "location": "stepDefinition\\registration.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 460000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user click on submit",
+            "match": {
+              "location": "stepDefinition\\registration.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User get invalid password message",
+            "match": {
+              "location": "stepDefinition\\registration.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1127000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinition\\hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "98.0.4758.102"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]
